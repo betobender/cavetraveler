@@ -1,0 +1,78 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#20FFFFFF">
+
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Cave Traveler"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="260dp" 
+        android:layout_weight="5"
+        android:background="#20FFFFFF">
+
+        <Button
+            android:id="@+id/viewCreditsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/main_menu_button_bg"
+            android:text="View Credits"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:onClick="viewCredits" />
+
+        <Button
+            android:id="@+id/startGameBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/viewCreditsBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/main_menu_button_bg"
+            android:text="Start Game"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:onClick="startGame" />
+
+        <Button
+            android:id="@+id/viewHighScoresBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewCreditsBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/main_menu_button_bg"
+            android:text="View HighScores"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:onClick="viewHighScores" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#20FFFFFF" >
+    </RelativeLayout>
+    
+    
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="TitleTextStyle">
+        <item name="android:textColor">#FFFFFFDD</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:shadowColor">#FFFFFFFF</item>
+        <item name="android:shadowDx">15</item>
+        <item name="android:shadowDy">15</item>
+        <item name="android:shadowRadius">15</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:background">#FF00FF00</item>
+    </style>
+
+</resources>

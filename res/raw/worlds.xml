@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Engine>
+	<Worlds>
+	    <World name="mainMenu">
+			<TextureMap>
+				<Texture name="bluebloom" bitmap="bluebloom" height="1" width="1"/>
+				<Texture name="modifier_fragment" bitmap="modifier_fragment"/>
+				<Texture name="modifier_levelstart_icon" text="LEVEL START" textSize="30" textWidth="512" textHeight="512"/>
+				<Texture name="modifier_invert_gravity" text="INVERT GRAVITY" textSize="30" textWidth="512" textHeight="512"/>
+				<Texture name="modifier_normalizer" text="NORMALIZER" textSize="30" textWidth="512" textHeight="512"/>
+				<Texture name="modifier_control_malfunction" text="MALFUNCTION" textSize="30" textWidth="512" textHeight="512"/>
+				<Texture name="modifier_control_slowtime" text="TIME ANOMALY" textSize="30" textWidth="512" textHeight="512"/>
+				<Texture name="cave_fragment" bitmap="cave_fragment"/>
+				<Texture name="mark" bitmap="mark"/>
+				<Texture name="gradient" bitmap="gradient"/>
+				<Texture name="smoke" bitmap="smoke"/>
+				<Texture name="water_drop" bitmap="water_drop"/>
+				<Texture name="circle" bitmap="circle"/>
+				<Texture name="bonus_speed_message" text="SPEED UP" textSize="40" textWidth="256" textHeight="256"/>
+				<Texture name="bonus_auto_message" text="AUTO PILOT" textSize="40" textWidth="256" textHeight="256"/>
+			</TextureMap>
+			<GameObjects>
+				<GameObject name="cursor" attachedToCamera="true" collidable="false" dynamic="true" initialState="camera1" initialXPosition="1500" initialXSpeed="0" initialYPosition="150" initialYSpeed="0" layerId="0" playable="true" type="generic">
+					<States>
+						<State state="camera1" duration="15" nextState="camera2">
+						    <Camera duration="15" from="100, -200, 500" lookFrom="300, 0, 0" lookTo="300, 0, 0" relativeTo="gameObject" to="0, -50, 600"/>
+					    </State>
+						<State state="camera2" duration="15" nextState="camera3">
+						    <Camera duration="15" from="0, -50, 600" lookFrom="300, 0, 0" lookTo="0, 0, 0" relativeTo="gameObject" to="0, 100, 400"/>
+					    </State>
+						<State state="camera3" duration="15" nextState="camera1">
+						    <Camera duration="15" from="0, 100, 400" lookFrom="0, 0, 0" lookTo="300, 0, 0" relativeTo="gameObject" to="100, -200, 500"/>
+					    </State>					    					    
+					</States>
+				</GameObject>
+				<GameObject type="menuShip"/>
+				<GameObject type="lightPoint" initialXPosition="2000" initialYPosition="150"/>
+			</GameObjects>
+	    </World>
+	    
+		<World name="world01">
+			<TextureMap>
+				<Texture name="bluebloom" bitmap="bluebloom" height="1" width="1"/>
+				<Texture name="modifier_fragment" bitmap="modifier_fragment"/>
+				<Texture name="modifier_levelstart_icon" text="LEVEL START" textSize="30" textWidth="512" textHeight="512"/>
+				<Texture name="modifier_invert_gravity" text="INVERT GRAVITY" textSize="30" textWidth="512" textHeight="512"/>
+				<Texture name="modifier_normalizer" text="NORMALIZER" textSize="30" textWidth="512" textHeight="512"/>
+				<Texture name="modifier_control_malfunction" text="MALFUNCTION" textSize="30" textWidth="512" textHeight="512"/>
+				<Texture name="modifier_control_slowtime" text="TIME ANOMALY" textSize="30" textWidth="512" textHeight="512"/>
+				<Texture name="cave_fragment" bitmap="cave_fragment"/>
+				<Texture name="mark" bitmap="mark"/>
+				<Texture name="gradient" bitmap="gradient"/>
+				<Texture name="smoke" bitmap="smoke"/>
+				<Texture name="water_drop" bitmap="water_drop"/>
+				<Texture name="circle" bitmap="circle"/>
+				<Texture name="bonus_speed_message" text="SPEED UP" textSize="40" textWidth="256" textHeight="256"/>
+				<Texture name="bonus_auto_message" text="AUTO PILOT" textSize="40" textWidth="256" textHeight="256"/>
+			</TextureMap>
+			<SoundMap>
+			    <Sound name="ship_engine" resource="ship_engine"/>
+			</SoundMap>
+			<Forces>
+				<Force name="gravity" from="-100" function="const" x="0" y="1"/>
+			</Forces>
+			<GameObjects>
+				<GameObject type="ship"/>
+			</GameObjects>
+		</World>
+	</Worlds>
+</Engine>

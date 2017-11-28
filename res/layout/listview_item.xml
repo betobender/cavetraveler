@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal">
+<TextView
+    android:text="TESTE SIZE"  
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:layout_weight="2"
+    android:id="@+id/listViewText1"
+    android:textSize="15sp" android:paddingTop="10dip" android:paddingBottom="10dip"/>
+
+<TextView
+    android:text="TESTE SIZE"  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    android:id="@+id/listViewText2"
+    android:textSize="15sp" android:paddingTop="10dip" android:paddingBottom="10dip"/>
+
+<TextView
+    android:text="TESTE SIZE"  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    android:id="@+id/listViewText3"
+    android:textSize="15sp" android:paddingTop="10dip" android:paddingBottom="10dip"/>
+
+<TextView
+    android:text="TESTE SIZE"  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    android:id="@+id/listViewText4"
+    android:textSize="15sp" android:paddingTop="10dip" android:paddingBottom="10dip"/>
+</LinearLayout>

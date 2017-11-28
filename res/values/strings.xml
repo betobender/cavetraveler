@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cave Traveler</string>
+    <string name="app_version">Version</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Cave Traveler</string>
+    <string name="title_activity_game">Cave Traveler</string>
+    <string name="play_button">Start the Game</string>
+    <string name="highscores_button">View the current high scores</string>
+    <string name="exit_button">Exit</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_model">ModelActivity</string>
+    <string name="title_activity_splash_one">SplashOneActivity</string>
+    <string name="title_activity_score_submit_dialog">ScoreSubmitDialog</string>
+
+</resources>

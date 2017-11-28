@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320sp"
+    android:layout_height="140sp"
+    android:background="@drawable/dialog_bg" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:text="Submit HighScore"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/playerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Player Name" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/skip"
+        android:layout_width="112sp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/playerName"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/main_menu_button_bg"
+        android:text="Skip"
+        android:textSize="15sp"
+        android:textColor="#FFFFFFFF"
+        android:onClick="skipScoreClick"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="112sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/playerName"
+        android:background="@drawable/main_menu_button_bg"
+        android:text="Submit" 
+        android:textSize="15sp"
+        android:textColor="#FFFFFFFF"
+        android:onClick="submitScoreClick"/>
+
+    <ProgressBar
+        android:id="@+id/submitingProgressBar"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

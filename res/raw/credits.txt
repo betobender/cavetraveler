@@ -1,0 +1,16 @@
+[Credits]
+
+	Hello everyone! My name is Roberto Bender and I love video games since I was a little kid back in the eighties. So, about this game, this is my first attempt to develop an android application and a game so some issues will be found. Please, I encourage you to send me an e-mail with any defect you may find in this application and I promise I will take good care of it :)
+	This game does not use any game engine currently available on the Internet. I built one myself, so it WILL HAVE bugs. The game is also free and doesn't have ads and banners nor any microtransactions inside. Just play it, and if you like it, share via comments in the Google Play store and tell your friends. But if you wish to contribute with my work somehow, you can always donate using the Paypal button below
+	All the music found in the game came from 'freesounds.org' and all the 'ART' was made by me :)
+
+Thank you all, enjoy it
+
+Roberto Bender
+betobender@aol.com
+
+[Special Thanks]
+	Prado (Fixing some issues in the engine code)
+	Diogo (Great ideas and Shaders tutorial)
+	Morgana (My wife, and the GREAT TESTER)
+	Lisandro (For advertising the game)
